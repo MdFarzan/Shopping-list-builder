@@ -10,11 +10,28 @@
 }
 body{
     background-color:white;
+    font-family:Montserrat;
+    
 }
 
 #wrapper{
     width:80%;
     background-color:var(--primary);
     margin:0 auto;
-    padding:20px 50px;
+    padding: 0px 0px 20px ;
+}
+
+header{
+    padding:15px 0;
+    text-align:center;
+}
+#list-name{
+    font-size:2em;
+}
+
+.container:nth-child(odd){
+    background-color:var(--sec-1);
+}
+.container:nth-child(even){
+    background-color:var(--sec-2);
 }
