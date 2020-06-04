@@ -73,3 +73,44 @@ main{
     padding:5px 10px;
     color:white;
 }
+
+.dialog{
+    max-width:350px;
+    border:1px solid black;
+    padding:15px 35px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:1000;
+    background-color:#d3d3d3;
+}
+
+.title{
+    margin:3px 0px 0px;
+    font-size:1.2em;
+}
+input{
+    width:100%;
+    padding:7px 10px;
+    font-size:1.2em;
+    margin:5px 0px;
+    outline:none;
+    border-radius:8px;
+    border:none;
+}
+
+.btn{
+    padding:10px 15px;
+    font-size:1em;
+    display:block;
+    margin:8px auto 12px;
+    background:mediumSeaGreen;
+    border:none;
+    color:white;
+    border-radius:8px;
+}
+.btn:hover{
+    background:rgb(15, 153, 77);
+    transition:0.3s;
+}
