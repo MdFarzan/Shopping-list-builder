@@ -31,9 +31,9 @@ header{
 
 .container{
     width:90%;
-    margin:0 auto;
-    height:40px;
+    margin:15px auto;
     position:relative;
+    box-shadow:1px 1px 3px rgba(0,0,0,0.2);
 }
 .container:nth-child(odd){
     background-color:var(--sec-1);
@@ -42,12 +42,21 @@ header{
     background-color:var(--sec-2);
 }
 
+main{
+    counter-reset: item-count 0;
+}
+
 .count{
     display:inline-block;
     width:80px;
-    text-align:center;
-    
+    text-align:center;  
     font-size:1.5em;
+}
+
+/*css counter*/
+.count::after{
+    counter-increment:item-count;
+    content:counter(item-count) ". ";
 }
 
 .del{
