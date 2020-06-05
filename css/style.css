@@ -90,11 +90,14 @@ main{
     margin:3px 0px 0px;
     font-size:1.2em;
 }
+label{
+    font-size:1.1em;
+}
 input{
     width:100%;
     padding:7px 10px;
     font-size:1.2em;
-    margin:5px 0px;
+    margin:3px 0 15px;
     outline:none;
     border-radius:8px;
     border:none;
@@ -103,7 +106,7 @@ input{
 .btn{
     padding:10px 15px;
     font-size:1.2em;
-    display:block;
+    display:inline-block;
     margin:8px auto 12px;
     background:mediumSeaGreen;
     border:none;
@@ -112,8 +115,18 @@ input{
     outline:none;
 }
 .btn:hover{
-    background:rgb(15, 153, 77);
+    border:1px solid mediumSeaGreen;
     transition:0.3s;
+}
+
+.primary-btn{
+    background:dodgerBlue;
+}
+
+.secondary-btn{
+    background:white;
+    border:1px solid dodgerBlue;
+    color:black;
 }
 
 /*hide object for temporary purpose*/
@@ -132,6 +145,12 @@ footer{
 #add-item{
     background:dodgerBlue;
     padding:15px 25px;
+}
+
+.dialog-title{
+    font-size:1.3em;
+    margin:2px 0 10px;
+    text-transform:uppercase;
 }
 
 .clicked{

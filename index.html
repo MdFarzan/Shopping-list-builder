@@ -14,6 +14,24 @@
         <input type="text" name="list-name" placeholder="eg. shopping list" />
         <button type="button" class="btn" id="create-list">Create list</button>
     </div>
+
+    <div id="item-details" class="dialog">
+        <p class="dialog-title">Enter item details</p>
+        <label for="item-name">Item name</label>
+        <input type="text" id="item-name" name="item-name" placeholder="eg. Potato" />
+        <label for="item-unit">Item Unit</label>
+        <input list="unit"  id="item-unit" name="item-unit" placeholder="eg. Kg.">
+        <datalist id="unit">
+            <option value="Kg.">
+            <option value="Pcs.">
+            <option value="Box">
+            <option value="ltr.">
+        </datalist>
+        <label for="item-qty" >Item Quantity</label>
+        <input type="number" id="item-qty" name="item-qty" min="1" placeholder="eg. 1" />
+        <button type="button" class="btn secondary-btn" id="create-list">Add item</button>
+        <button type="button" class="btn primary-btn" id="create-list">Add more item</button>
+    </div>
 <div id="wrapper">
     <header>
         <span id="list-name">Shopping list name</span>
