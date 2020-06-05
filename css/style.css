@@ -132,6 +132,8 @@ input{
 /*hide object for temporary purpose*/
 .dialog{
     display:none;
+    display:relative;
+    user-select:none;
 }
 
 footer{
@@ -177,4 +179,11 @@ input[name="list-name"]{
     display:block;
     margin-left:auto;
     margin-right:auto;
+}
+
+.close-dialog{
+    position:absolute;
+    top:5px;
+    right:10px;
+    font-size:1.5em;
 }

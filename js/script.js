@@ -27,4 +27,6 @@ document.querySelector("#add-item").addEventListener("click",()=>{
     document.querySelector("#item-details").style.display = "block";
 });
 
+
+
 //add item handler
