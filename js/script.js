@@ -27,6 +27,11 @@ document.querySelector("#add-item").addEventListener("click",()=>{
     document.querySelector("#item-details").style.display = "block";
 });
 
-
+//closing dialog box
+function closeDialog(v){
+    v.parentNode.style.display = "none";
+    console.log(v.parentNode);
+    displayBody();
+}
 
 //add item handler
