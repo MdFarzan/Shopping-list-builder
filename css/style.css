@@ -102,15 +102,42 @@ input{
 
 .btn{
     padding:10px 15px;
-    font-size:1em;
+    font-size:1.2em;
     display:block;
     margin:8px auto 12px;
     background:mediumSeaGreen;
     border:none;
     color:white;
     border-radius:8px;
+    outline:none;
 }
 .btn:hover{
     background:rgb(15, 153, 77);
     transition:0.3s;
+}
+
+/*hide object for temporary purpose*/
+#list{
+    display:none;
+}
+
+footer{
+    position:absolute;
+    bottom:0px;
+    left:50%;
+    transform:translateX(-50%);
+    padding:20px 30px;
+}
+
+#add-item{
+    background:dodgerBlue;
+    padding:15px 25px;
+}
+
+.clicked{
+    box-shadow:0px 5px 2px rgba(0,0,0,0.3);
+}
+.clicked:active{
+    transform:translateY(5px);
+    box-shadow:0px 3px 2px rgba(0,0,0,0.3);
 }
