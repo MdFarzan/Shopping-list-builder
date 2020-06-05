@@ -26,3 +26,5 @@ document.querySelector("#add-item").addEventListener("click",()=>{
     blurBody();
     document.querySelector("#item-details").style.display = "block";
 });
+
+//add item handler
