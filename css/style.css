@@ -130,7 +130,7 @@ input{
 }
 
 /*hide object for temporary purpose*/
-#name-of-list{
+.dialog{
     display:none;
 }
 
