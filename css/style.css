@@ -30,13 +30,18 @@ header{
     font-size:2em;
 }
 
-.container{
+.container, .container-header{
     width:90%;
     margin:15px auto;
     position:relative;
     box-shadow:1px 1px 3px rgba(0,0,0,0.2);
     
 }
+
+.container-header{
+    background-color:black;
+}
+
 .container:nth-child(odd){
     background-color:var(--sec-1);
 }
@@ -44,16 +49,22 @@ header{
     background-color:var(--sec-2);
 }
 
+.container:nth-child(2){
+    display:none;
+    background:white;
+}
+
 main{
     counter-reset: item-count 0;
 }
 
-.con-count{
+.con-count,.count{
     display:inline-block;
     width:10%;
     text-align:center;  
     padding:5px 10px;
     font-size:1.5em;
+    border-right:2px solid white;
 }
 
 /*css counter*/
@@ -62,7 +73,7 @@ main{
     content:counter(item-count) ". ";
 }
 
-.con-del-item{
+.del-item,.con-del-item{
     position:absolute;
     right:0;
     background:white;
@@ -72,18 +83,21 @@ main{
     color:red;
     font-size:1.2em;
 }
-.con-item-name{
+.con-item-name,.item-name{
     width:60%;
     display:inline-block;
     font-size:1.5em;
     color:white;
+    padding:0px 15px;
+    
 }
 
-.con-item-qty{
+.con-item-qty,.item-qty{
     width:20%;
     font-size:1.4em;
     color:white;
-    
+    border-left:2px solid white;
+    padding:0px 15px;
 }
 
 .dialog{
