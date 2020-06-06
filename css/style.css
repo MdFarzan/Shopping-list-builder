@@ -35,6 +35,7 @@ header{
     margin:15px auto;
     position:relative;
     box-shadow:1px 1px 3px rgba(0,0,0,0.2);
+    
 }
 .container:nth-child(odd){
     background-color:var(--sec-1);
@@ -47,32 +48,42 @@ main{
     counter-reset: item-count 0;
 }
 
-.count{
+.con-count{
     display:inline-block;
-    width:80px;
+    width:10%;
     text-align:center;  
     font-size:1.5em;
 }
 
 /*css counter*/
-.count::after{
+.con-count::after{
     counter-increment:item-count;
     content:counter(item-count) ". ";
 }
 
-.del{
+.con-del-item{
     position:absolute;
     right:0;
     background:white;
+    width:10%;
+    text-align:center;
     padding:8px 30px;
     color:red;
     font-size:1.2em;
 }
-.item-name{
+.con-item-name{
+    width:60%;
     display:inline-block;
     font-size:1.5em;
     padding:5px 10px;
     color:white;
+}
+
+.con-item-qty{
+    width:20%;
+    
+    font-size:1.2em;
+    text-align:left;
 }
 
 .dialog{

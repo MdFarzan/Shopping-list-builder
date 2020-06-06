@@ -4,7 +4,7 @@ document.body.onload = function(){
     document.querySelector("#name-of-list").style.display = "block";
  
 }
-
+var firstItem = false;
 document.getElementById("create-list").addEventListener("click",()=>{
     let listName = document.querySelector("input[name=list-name]").value;
     document.querySelector("#list-name").innerText = listName;
@@ -30,8 +30,24 @@ document.querySelector("#add-item").addEventListener("click",()=>{
 //closing dialog box
 function closeDialog(v){
     v.parentNode.style.display = "none";
-    console.log(v.parentNode);
     displayBody();
 }
 
+var itemContainer = [];
+
 //add item handler
+function addItem(){
+    let name = document.querySelector("#item-name").value;
+    let item_unit = document.querySelector("#item-unit").value;
+    let units = document.querySelector("#item-qty").value;
+    let con = document.querySelector(".container");
+    if(firstItem == false){
+        document.querySelector(".item-name").innerText = name;
+        firstItem = true;
+    }
+
+    else{
+
+    }
+}
+console.log(firstItem);

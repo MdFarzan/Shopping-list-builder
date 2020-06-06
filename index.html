@@ -30,7 +30,7 @@
         </datalist>
         <label for="item-qty" >Item Quantity</label>
         <input type="number" id="item-qty" name="item-qty" min="1" placeholder="eg. 1" />
-        <button type="button"  class="btn center-btn p-hover primary-btn" id="create-list">Add more item</button>
+        <button type="button"  class="btn center-btn p-hover primary-btn" id="create-list" onclick="addItem();">Add more item</button>
     </div>
 <div id="wrapper">
     <header>
@@ -39,7 +39,7 @@
 
     <main>
         <div class="container">
-            <span class="count"></span> <p class="item-name">Item Name</p><span class="del" onclick="delItem(event.target);" title="Remove Item">X</span>
+            <span class="con-count"></span> <p class="con-item-name">Item Name</p><span class="con-item-qty">Qty + Unit</span><span class="con-del-item" onclick="delItem(event.target);" title="Remove Item">X</span>
         </div>
 
         
