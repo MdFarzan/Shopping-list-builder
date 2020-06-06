@@ -42,7 +42,8 @@ function addItem(){
     let units = document.querySelector("#item-qty").value;
     let con = document.querySelector(".container");
     if(firstItem == false){
-        document.querySelector(".item-name").innerText = name;
+        document.querySelector(".con-item-name").innerText = name;
+        document.querySelector(".con-item-qty").innerText = units +" "+ item_unit + "";
         firstItem = true;
     }
 

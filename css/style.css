@@ -52,6 +52,7 @@ main{
     display:inline-block;
     width:10%;
     text-align:center;  
+    padding:5px 10px;
     font-size:1.5em;
 }
 
@@ -75,15 +76,14 @@ main{
     width:60%;
     display:inline-block;
     font-size:1.5em;
-    padding:5px 10px;
     color:white;
 }
 
 .con-item-qty{
     width:20%;
+    font-size:1.4em;
+    color:white;
     
-    font-size:1.2em;
-    text-align:left;
 }
 
 .dialog{
