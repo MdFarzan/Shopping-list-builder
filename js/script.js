@@ -41,14 +41,14 @@ function addItem(){
     let item_unit = document.querySelector("#item-unit").value;
     let units = document.querySelector("#item-qty").value;
     let con = document.querySelector(".container");
-    if(firstItem == false){
-        document.querySelector(".con-item-name").innerText = name;
-        document.querySelector(".con-item-qty").innerText = units +" "+ item_unit + "";
-        firstItem = true;
-    }
-
-    else{
-
-    }
+    var node = document.querySelector(".container").cloneNode(true);    
+    node.childNodes[3].innerText = name;
+    node.childNodes[4].innerText = units + " " + item_unit + ".";
+   
+    
+    node.style.display = "block";
+    
+    document.querySelector("main").appendChild(node);
+    console.log(node);
 }
 console.log(firstItem);
