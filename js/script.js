@@ -51,4 +51,11 @@ function addItem(){
     document.querySelector("main").appendChild(node);
     console.log(node);
 }
-console.log(firstItem);
+
+
+//delete item
+function delItem(v){
+    let temp = v.parentNode;
+    v.parentNode.innerHTML = "Deleted";
+    temp.remove();
+}
