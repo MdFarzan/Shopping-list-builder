@@ -35,7 +35,8 @@ header{
     margin:15px auto;
     position:relative;
     box-shadow:1px 1px 3px rgba(0,0,0,0.2);
-    
+    font-size:1.5em;
+    overflow:hidden;
 }
 
 .container-header{
@@ -63,7 +64,7 @@ main{
     width:10%;
     text-align:center;  
     padding:5px 10px;
-    font-size:1.5em;
+    
     border-right:2px solid white;
 }
 
@@ -79,14 +80,12 @@ main{
     background:white;
     width:10%;
     text-align:center;
-    padding:8px 30px;
+    padding:8px 0px;
     color:red;
-    font-size:1.2em;
 }
 .con-item-name,.item-name{
     width:60%;
     display:inline-block;
-    font-size:1.5em;
     color:white;
     padding:0px 15px;
     
@@ -94,7 +93,7 @@ main{
 
 .con-item-qty,.item-qty{
     width:20%;
-    font-size:1.4em;
+    
     color:white;
     border-left:2px solid white;
     padding:0px 15px;
@@ -213,4 +212,20 @@ input[name="list-name"]{
     top:5px;
     right:10px;
     font-size:1.5em;
+}
+
+/*Responsive*/
+@media (max-width:576px){
+    body{
+        background-color:crimson;
+    }
+
+    #wrapper,.container, .container-header{
+        width:100%;
+        font-size:1.1em;
+    }
+
+    .del-item{
+        display:none;
+    }
 }
