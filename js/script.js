@@ -59,3 +59,4 @@ function delItem(v){
     v.parentNode.innerHTML = "Deleted";
     temp.remove();
 }
+
