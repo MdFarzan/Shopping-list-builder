@@ -44,12 +44,12 @@ function addItem(){
     var node = document.querySelector(".container").cloneNode(true);    
     node.childNodes[3].innerText = name;
     node.childNodes[4].innerText = units + " " + item_unit + ".";
-   
+    
+    //adding double click to delete
     
     node.style.display = "block";
     
     document.querySelector("main").appendChild(node);
-    console.log(node);
 }
 
 
@@ -59,4 +59,5 @@ function delItem(v){
     v.parentNode.innerHTML = "Deleted";
     temp.remove();
 }
+
 
