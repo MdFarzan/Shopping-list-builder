@@ -257,6 +257,11 @@ input[name="list-name"]{
         padding-bottom:3px;
     }
 
+    #add-item{
+        position:fixed;
+        bottom:0px;
+    }
+
 }
 
 
