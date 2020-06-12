@@ -37,6 +37,7 @@ header{
     box-shadow:1px 1px 3px rgba(0,0,0,0.2);
     font-size:1.5em;
     overflow:hidden;
+    padding:5px 0;
 }
 
 .container-header{
@@ -63,7 +64,7 @@ main{
     display:inline-block;
     width:10%;
     text-align:center;  
-    padding:5px 10px;
+    padding:0 10px;
     
     border-right:2px solid white;
 }
@@ -77,6 +78,7 @@ main{
 .del-item,.con-del-item{
     position:absolute;
     right:0;
+    top:0;
     background:white;
     width:10%;
     text-align:center;
@@ -227,5 +229,61 @@ input[name="list-name"]{
 
     .del-item{
         display:none;
+    }
+
+    .del-item,.con-del-item{
+        display:none;
+    }
+
+    .con-count,.count{
+        width:20%;
+        float:left;
+        height: 58px;
+        line-height: 58px;
+    }
+
+    .con-item-qty,.item-qty{
+        display:block;
+        width:80%;
+        float:right;
+        border-left:none;
+        border-top:1px solid white;
+        
+
+    }
+
+    .item-name,.con-item-name, .con-item-qty,.item-qty{
+        padding-top:2px;
+        padding-bottom:3px;
+    }
+
+}
+
+
+@media (min-width:576px){
+    #wrapper,.container, .container-header{
+        width:100%;
+        font-size:1.1em;
+    }
+}
+
+@media (min-width:768px){
+    #wrapper,.container, .container-header{
+        width:90%;
+        font-size:1.1em;
+    }
+}
+
+@media (min-width:992px){
+    #wrapper,.container, .container-header{
+        width:80%;
+        font-size:1.1em;
+    }
+}
+
+@media (min-width:1200px){
+    #wrapper,.container, .container-header{
+        max-width:1092px;
+        font-size:1.1em;
     }
 }
