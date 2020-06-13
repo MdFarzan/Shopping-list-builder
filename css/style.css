@@ -79,6 +79,7 @@ main{
     position:absolute;
     right:0;
     top:0;
+    line-height: 23px;
     background:white;
     width:10%;
     text-align:center;
