@@ -102,6 +102,7 @@ main{
 }
 
 .dialog{
+    min-width:300px;
     max-width:450px;
     border:1px solid black;
     padding:15px 35px;
@@ -218,9 +219,7 @@ input[name="list-name"]{
 
 /*Responsive*/
 @media (max-width:576px){
-    body{
-        background-color:crimson;
-    }
+    
 
     #wrapper,.container, .container-header{
         width:100%;

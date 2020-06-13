@@ -7,7 +7,12 @@ document.body.onload = function(){
 var firstItem = false;
 document.getElementById("create-list").addEventListener("click",()=>{
     let listName = document.querySelector("input[name=list-name]").value;
+    if((/^\s+$/).test(listName) || listName == ""){
+        listName = "Shopping List";
+    }
+
     document.querySelector("#list-name").innerText = listName;
+
     document.querySelector("#name-of-list").style.display = "none";
     displayBody();
 });
