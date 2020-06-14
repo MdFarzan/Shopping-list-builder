@@ -57,6 +57,9 @@ function addItem(){
     node.style.display = "block";
     
     document.querySelector("main").appendChild(node);
+
+    //creating input types
+    clearValues();
 }
 
 
@@ -70,13 +73,14 @@ function delItem(v){
 //validations
 var i=0;
 function checkValidation(v){
-    
+    document.querySelector("#create-item").removeEventListener("click",addItem);
     if(v.checkValidity()){
         v.nextElementSibling.innerHTML="";
         i++;
         if(i>=2){
         document.querySelector("#create-item").addEventListener("click",addItem);
-        i=0;}
+        i=0;
+        }
     }
 
     else{
@@ -85,6 +89,7 @@ function checkValidation(v){
         document.querySelector("#create-item").removeEventListener("click",addItem);
         
     }
+    
 
 }
 
@@ -99,4 +104,12 @@ function checkDatalistValidation(v){
         v.nextElementSibling.innerHTML = v.validationMessage;
     }
     
+}
+
+//clearing form values
+function clearValues(){
+    document.querySelector("#item-name").value = "";
+    document.querySelector("#item-unit").value = "";
+    document.querySelector("#item-qty").value = "";
+    document.querySelector("#create-item").removeEventListener("click",addItem);
 }
