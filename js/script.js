@@ -1,4 +1,4 @@
-console.log("js is perfectly referenced.");
+
 document.body.onload = function(){
     blurBody();
     document.querySelector("#name-of-list").style.display = "block";
@@ -40,6 +40,8 @@ function closeDialog(v){
 
 var itemContainer = [];
 
+
+
 //add item handler
 function addItem(){
     let name = document.querySelector("#item-name").value;
@@ -65,4 +67,36 @@ function delItem(v){
     temp.remove();
 }
 
+//validations
+var i=0;
+function checkValidation(v){
+    
+    if(v.checkValidity()){
+        v.nextElementSibling.innerHTML="";
+        i++;
+        if(i>=2){
+        document.querySelector("#create-item").addEventListener("click",addItem);
+        i=0;}
+    }
 
+    else{
+        v.nextElementSibling.innerHTML = v.validationMessage;
+        
+        document.querySelector("#create-item").removeEventListener("click",addItem);
+        
+    }
+
+}
+
+function checkDatalistValidation(v){
+    
+    
+    if(v.checkValidity()){
+        v.nextElementSibling.nextElementSibling.innerHTML="";
+    }
+
+    else{
+        v.nextElementSibling.innerHTML = v.validationMessage;
+    }
+    
+}
